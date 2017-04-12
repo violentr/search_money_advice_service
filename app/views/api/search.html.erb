@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <h4 class="center" >Enter your search here</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <%= form_for :search  do |f| %>
+        <div class="input-group">
+          <%= f.text_field :query, class: "form-control" %>
+          <div class="input-group-btn">
+          </div>
+          <%= f.submit "Search", class:"btn-success" %>
+        </div>
+      </div>
+    <% end %>
+    </div>
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-8">
+        <div id="info" style="margin-top:45px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
